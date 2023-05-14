@@ -20,8 +20,8 @@ function Banana({ index, z, speed }) {
   // By the time we're here the model is loaded, this is possible through React suspense
 
   // DEBUGGING
-  // console.log(nodes)
-  // console.log(materials)
+   console.log(nodes)
+   console.log(materials)
 
   // Local component state, it is safe to mutate because it's fixed data
   const [data] = useState({
@@ -68,6 +68,14 @@ function Banana({ index, z, speed }) {
   //     <mesh geometry={nodes.Giftbox01.geometry} material={materials.Pink01} material-emissive="#009000" />
   //     <mesh geometry={nodes.Giftbox01.geometry} material={materials.Pink01} material-emissive="#9E2129" />
   //     <mesh geometry={nodes.Giftbox01.geometry} material={materials.Pink01} material-emissive="#009000" />
+  //   </Detailed>
+  // )
+
+  // return (
+  //   <Detailed ref={ref} distances={[0, 65, 80]}>
+  //     {/* <mesh geometry={nodes.banana_high.geometry} material={materials.skin} material-emissive="#ffffff" />
+  //     <mesh geometry={nodes.banana_low.geometry} material={materials.skin} material-emissive="#9E2129" /> */}
+  //     <mesh geometry={nodes.banana_mid.geometry} material={materials.skin} material-emissive="#ffffff" />
   //   </Detailed>
   // )
 }
